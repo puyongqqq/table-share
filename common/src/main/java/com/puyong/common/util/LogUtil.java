@@ -2,6 +2,7 @@ package com.puyong.common.util;
 
 public final class LogUtil {
 
+    // private static
 
     public static void debugLog(String format, Object... arg) {
         // todo

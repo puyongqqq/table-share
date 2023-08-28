@@ -1,4 +1,4 @@
-package com.puyong.plugin.util;
+package com.puyong.common.util;
 
 public class ReflectionUtils {
 
