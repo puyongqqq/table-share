@@ -12,11 +12,11 @@ public class BasedMonthTableShareStrategy extends AbstractTableShareStrategy {
     @Override
     public String tableSuffix(String key) {
         // check key 是否合法
-        if (key == null || key.length() < 14) {
+        if (key == null|| key.length() < 14) {
             throw new IllegalArgumentException("key is invalid");
         }
         // 获取key中的时间
-        final var tableSuffix = key.substring(6, 10);
+        final var tableSuffix = key.substring(6, 12);
         LogUtil.infoLog("tableSuffix|", tableSuffix);
         if (!preCheck(tableSuffix)) {
             throw new IllegalArgumentException("");
